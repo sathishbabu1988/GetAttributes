@@ -51,7 +51,7 @@ class ProcessAttributes
 		options.addArguments("--ignore-certificate-errors");
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		//driver.manage().window().setPosition(new Point(-2000, 0));
+		driver.manage().window().setPosition(new Point(-2000, 0));
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 	}
